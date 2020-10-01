@@ -1,7 +1,9 @@
 from tkinter import *
 import smtplib
+import os
+import wikipedia
 
-
+# this function for sendinga a email
 def sendemail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
